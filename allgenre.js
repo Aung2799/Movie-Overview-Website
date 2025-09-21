@@ -18,8 +18,8 @@ searchBar.addEventListener("input", function (event) {
 
     if (genre) {
       const genreId = genre.id;
-      const movieUrl = `https://api.themoviedb.org/3/discover/movie?api_key=3a11b286a45ec4d0851c4e9464be0c8f&with_genres=${genreId}`;
-      const tvShowUrl = `https://api.themoviedb.org/3/discover/tv?api_key=3a11b286a45ec4d0851c4e9464be0c8f&with_genres=${genreId}`;
+      const movieUrl = `https://api.themoviedb.org/3/discover/movie?api_key=API_KEY&with_genres=${genreId}`;
+      const tvShowUrl = `https://api.themoviedb.org/3/discover/tv?api_key=API_KEY&with_genres=${genreId}`;
 
       Promise.all([
         fetch(movieUrl).then((response) => response.json()),
@@ -100,4 +100,5 @@ function updateDropdown(results) {
   } else {
     dropdownContent.style.display = "none";
   }
+
 }
