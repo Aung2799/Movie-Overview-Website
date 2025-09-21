@@ -1,5 +1,5 @@
 function populateGenres() {
-  const apiKey = "3a11b286a45ec4d0851c4e9464be0c8f";
+  const apiKey = "API_KEY";
   const movieApiUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`;
   const tvApiUrl = `https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}`;
 
@@ -49,3 +49,4 @@ function populateGenres() {
 }
 
 populateGenres();
+
