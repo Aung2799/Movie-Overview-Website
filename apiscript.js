@@ -1,4 +1,4 @@
-const apiKey = "3a11b286a45ec4d0851c4e9464be0c8f";
+const apiKey = "API_KEY";
 
 async function fetchMovieData() {
   const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
@@ -49,3 +49,4 @@ async function populateMovieGrid() {
 }
 
 window.onload = populateMovieGrid;
+
