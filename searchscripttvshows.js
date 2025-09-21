@@ -7,7 +7,7 @@ searchBar.addEventListener("input", function (event) {
   const searchQuery = searchBar.value;
 
   if (searchQuery && searchQuery.length >= 3) {
-    const apiUrl = `https://api.themoviedb.org/3/search/tv?api_key=3a11b286a45ec4d0851c4e9464be0c8f&query=${searchQuery}`;
+    const apiUrl = `https://api.themoviedb.org/3/search/tv?api_key=API_KEY&query=${searchQuery}`;
 
     fetch(apiUrl)
       .then((response) => response.json())
@@ -54,4 +54,5 @@ function updateDropdown(results) {
   } else {
     dropdownContent.style.display = "none";
   }
+
 }
