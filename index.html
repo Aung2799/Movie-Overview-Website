@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("moviewallpaper.webp");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      /* .search-bar {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      } */
+
+      .get-started-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .get-started-btn:hover {
+        background-color: #0056b3;
+      }
+      .search-bar {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+    .search-container {
+      margin-bottom: 20px;
+      position: relative;
+    }
+      .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 100%;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      overflow-y: auto;
+      max-height: 200px;
+      border-radius: 0 0 10px 10px;
+      border: 2px solid #ccc;
+      border-top: none;
+      top: calc(100% + 5px);
+      left: 0;
+    }
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .dropdown-item img {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .dropdown-item span {
+      flex: 1;
+      text-align: center;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Movies and TVshows Overview Website</h1>
+      <br>
+      <div class="search-container">
+        <div class="dropdown-content" id="dropdownContent"></div>
+  
+        <input
+          type="text"
+          class="search-bar"
+          id="searchBar"
+          placeholder="Enter keywords..."
+          autocomplete="off"
+        />
+      </div>
+        <a href="Movies.html" class="get-started-btn">View Full Site</a>
+      </form>
+    </div>
+    <script src="allgenre.js"></script>
+  </body>
+</html>
