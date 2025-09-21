@@ -1,4 +1,4 @@
-const apiKey = "3a11b286a45ec4d0851c4e9464be0c8f";
+const apiKey = "API_KEY";
 
 async function fetchTopRatedTVShows() {
   const url = `https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}&language=en-US&page=1`;
@@ -51,5 +51,6 @@ async function populateTVShowGrid() {
     console.error("Error populating TV show grid:", error.message);
   }
 }
+
 
 window.onload = populateTVShowGrid;
